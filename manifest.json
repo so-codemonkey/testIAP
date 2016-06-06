@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "testIAP",
+  "version": "0.5",
+  "description": "test IAP",
+  "permissions": [
+    "identity", "https://accounts.google.com/*", "https://www.googleapis.com/*" 
+  ],
+  "app": {
+    "background": {
+      "scripts": [ "main.js" ]
+    }
+  },
+  "icons": { "128": "icon_128.png" }
+}
