@@ -1,6 +1,10 @@
 # testIAP
 Chrome extension to test in-app-purchases
 
+## purpose
+This code can be used to demonstrate the Google PURCHASE_CANCELED bug described in http://stackoverflow.com/questions/37667802/chrome-extension-in-app-purchase-always-returns-purchase-canceled-even-if-the-p
+
+## use
 To use this, you'll need to:
  0. clone this repo.
  1. create a 128x128 icon file, name it icon_128.png, and add it to these files
@@ -15,7 +19,6 @@ To use this, you'll need to:
 The buy.js script comes from here: https://github.com/GoogleChrome/chrome-app-samples/blob/master/samples/managed-in-app-payments/scripts/buy.js
 
 ## gotchas
-
 I have found that my testers can't find the extension URL to install if they are not only signed into their Chrome browser, but also signed into their gmail account. I thought the Chrome browser identity management was completely different from the gmail identity management, so ... I dunno. 
 
 If you have weird problems getting this to work, doublecheck your Chrome developer dashboard pricing configuration. If you mean to have the extension free with a paid in app purchase, make sure the "pricing and payments" section is marked free, then go to the in-apps products tab at the top and add your in-app sku and set the pricing there.
